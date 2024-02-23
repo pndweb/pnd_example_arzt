@@ -1,0 +1,144 @@
+/*-- -------------------------- -->
+<---       Contact Strip        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #ContactStrip-327 {
+    padding: var(--sectionPadding);
+    background-color: #f7f7f7;
+  }
+  #ContactStrip-327 .cs-stat-group {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 37.5rem;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  #ContactStrip-327 .cs-item {
+    list-style: none;
+    width: 18.125rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #ContactStrip-327 .cs-item:hover .cs-picture {
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1.05);
+  }
+  #ContactStrip-327 .cs-picture {
+    width: 5rem;
+    height: 5rem;
+    /* 12px - 20px */
+    margin-right: clamp(0.75rem, 3vw, 1.25rem);
+    border: 1px solid #bababa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.6s;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #ContactStrip-327 .cs-flex-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #ContactStrip-327 .cs-icon {
+    width: 1.75rem;
+    height: auto;
+  }
+  #ContactStrip-327 .cs-header {
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: 0.75rem;
+    color: var(--headerColor);
+    display: block;
+  }
+  #ContactStrip-327 .cs-link,
+  #ContactStrip-327 .cs-hours {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-decoration: none;
+    color: #767676;
+    display: block;
+  }
+  #ContactStrip-327 .cs-link:hover {
+    text-decoration: underline;
+  }
+}
+/* Tablet - 650px */
+@media only screen and (min-width: 40.625rem) {
+  #ContactStrip-327 .cs-stat-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1.25rem;
+    row-gap: 2rem;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #ContactStrip-327 .cs-stat-group {
+    max-width: 80rem;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #ContactStrip-327 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #ContactStrip-327 .cs-header,
+  body.dark-mode #ContactStrip-327 .cs-link,
+  body.dark-mode #ContactStrip-327 .cs-hours {
+    color: var(--bodyTextColorWhite);
+  }
+}
+/*-- -------------------------- -->
+<---            Map             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #map-720 {
+    min-height: 33.75rem;
+    padding: var(--sectionPadding);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #map-720 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #map-720 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=kontakt.css.map */

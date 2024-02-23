@@ -1,0 +1,215 @@
+---
+title: 'Zahnarzt Heimfeld'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-1427">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper"> Dr. Michael Meier - Zahnarzt</span>
+                <h1 class="cs-title">Ihr Zahnarzt Hamburgs Süden</h1>
+                <p class="cs-text">
+                    Ihre Zahnarztpraxis in Heimfeld – Spezialisten für gesunde Zähne
+                </p>
+                <div class="cs-button-group">
+                    <a href="/leistungen" class="cs-button-solid cs-button1">Leistungen</a>
+                    <a href="/kontakt" class="cs-button-solid cs-button2">Kontakt</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="/assets/images/hero/dentist-with-dentistry-tools-isolated.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero/dentist-with-dentistry-tools-isolated.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/hero/dentist-with-dentistry-tools-isolated.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
+        </picture>
+    </section>
+                                
+
+
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="RPsbs-1127">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <!--Main Image-->
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/team/friendly-dentist.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/team/friendly-dentist.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/team/friendly-dentist.jpg" alt="person with box" width="657" height="676"  aria-hidden="true">
+                </picture>
+                <!--Circle Graphic-->
+                <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-shape.svg" alt="graphic" width="641" height="660" aria-hidden="true">
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">Stitch Non-profit Charity</span>
+                <h2 class="cs-title">Helping Each Other Can Make World Better</h2>
+                <p class="cs-text">
+                    We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies. Our impact is about more than moving money to where it’s needed most it’s also about helping nonprofits access information and ideas that will help them listen, learn, and grow.
+                </p>
+                <ul class="cs-ul">
+                    <li class="cs-li">Praesent feugiat sem mattis.</li>
+                    <li class="cs-li">Praesent feugiat sem mattis.</li>
+                    <li class="cs-li">Praesent feugiat sem mattis.</li>
+                    <li class="cs-li">Praesent feugiat sem mattis.</li>
+                </ul>
+                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--             Side By Side Reverse             -->
+    <!-- ============================================ -->
+
+    <section id="RPsbsr-1127">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <!--Main Image-->
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/team/female-dentist-with-dentistry-tools-isolated.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/team/female-dentist-with-dentistry-tools-isolated.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/team/female-dentist-with-dentistry-tools-isolated.jpg" alt="person with box" width="657" height="676"  aria-hidden="true">
+                </picture>
+                <!--Circle Graphic-->
+                <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-shape.svg" alt="graphic" width="641" height="660" aria-hidden="true">
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">Stitch Non-profit Charity</span>
+                <h2 class="cs-title">Helping Each Other Can Make World Better</h2>
+                <p class="cs-text">
+                    We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies. Our impact is about more than moving money to where it’s needed most it’s also about helping nonprofits access information and ideas that will help them listen, learn, and grow.
+                </p>
+                <ul class="cs-ul">
+                    <li class="cs-li">Praesent feugiat sem mattis.</li>
+                    <li class="cs-li">Praesent feugiat sem mattis.</li>
+                    <li class="cs-li">Praesent feugiat sem mattis.</li>
+                    <li class="cs-li">Praesent feugiat sem mattis.</li>
+                </ul>
+                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                    Services                  -->
+    <!-- ============================================ -->
+
+    <section id="services-1356">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">We’re Committed to Deliver Top High Quality Services</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-span">Professionelle</span> Zahnreinigung</h3>
+                    </a>
+                    <picture class="cs-background">
+                        <source media="(max-width: 600px)" srcset="/assets/images/services/zahnreinigung.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/services/zahnreinigung.jpg">
+                        <img decoding="async" src="/assets/images/services/zahnreinigung.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-span">Bleaching</h3>
+                    </a>
+                    <picture class="cs-background">
+                        <source media="(max-width: 600px)" srcset="/assets/images/services/bleaching.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/services/bleaching.jpg">
+                        <img decoding="async" src="/assets/images/services/bleaching.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-span">Wurzelkanal-</span> Behandlung</h3>
+                    </a>
+                    <picture class="cs-background">
+                        <source media="(max-width: 600px)" srcset="/assets/images/services/wurzelkanalbehandlung.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/services/wurzelkanalbehandlung.jpg">
+                        <img decoding="async" src="/assets/images/services/wurzelkanalbehandlung.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-span">Parodontitis-</span> Behandlung</h3>
+                    </a>
+                    <picture class="cs-background">
+                        <source media="(max-width: 600px)" srcset="/assets/images/services/parodontitis.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/services/parodontitis.jpg">
+                        <img decoding="async" src="/assets/images/services/parodontitis.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-span">Implantate</h3>
+                    </a>
+                    <picture class="cs-background">
+                        <source media="(max-width: 600px)" srcset="/assets/images/services/implantate.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/services/implantate.jpg">
+                        <img decoding="async" src="/assets/images/services/implantate.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-span">Zahnersatz</h3>
+                    </a>
+                    <picture class="cs-background">
+                        <source media="(max-width: 600px)" srcset="/assets/images/services/prothese.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/services/prothese.jpg">
+                        <img decoding="async" src="/assets/images/services/prothese.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </section>
+                                        
+
+{% endblock %}

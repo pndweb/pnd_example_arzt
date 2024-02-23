@@ -1,0 +1,185 @@
+---
+title: 'Leistungen'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'leistungen/'
+eleventyNavigation:
+    key: Leistungen
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/leistungen.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Leistungen</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/hero/banner_dentist.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero/banner_dentist.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/hero/banner_dentist.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                 Side By Side 1               -->
+    <!-- ============================================ -->
+    <a id="zahnreinigung"></a> <!-- ID used as internal link --> 
+    <section id="RPsbs-70">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/services/zahnreinigung.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/services/zahnreinigung.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/services/zahnreinigung.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Small Group Training</span>
+                <h2 class="cs-title">Professionelle Zahnreinigung</h2>
+                <p class="cs-text">
+                    Unsere oberste Priorität liegt auf der Erhaltung Ihrer Zahngesundheit. Mit unserem umfassenden Prophylaxeprogramm möchten wir Karies und Parodontitis vorbeugen, um den Verlust von Zahnsubstanz oder des Zahnhalteapparates zu verhindern. 
+                    Durch den Einsatz modernster Hilfsmittel und Instrumente reinigen wir Zähne und Zahnfleisch gründlich, um ihre Gesundheit zu bewahren. Unsere speziell geschulten Mitarbeiter führen die Zahnreinigung durch und passen sie individuell an Ihre Bedürfnisse an.
+                </p>
+                <!-- Taken from RPsbs-1472 -->
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg" alt="checkmark" width="24" height="24">
+                        Individuelle Beratung zur häuslichen Mundhygienetechnik
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg" alt="checkmark" width="24" height="24">
+                        Professionelle Zahnreinigung
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg" alt="checkmark" width="24" height="24">
+                        Nachsorge nach Parodontitisbehandlung
+                    </li>
+                </ul>
+                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Details zur Behandlung</a>
+            </div>
+        </div>
+    </section>
+                                    
+    <!-- ============================================ -->
+    <!--             Side By Side Reverse 2           -->
+    <!-- ============================================ -->
+    <a id="bleaching"></a> <!-- ID used as internal link -->
+    <section id="RPsbsr-70">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/services/bleaching.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/services/bleaching.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/services/bleaching.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Bleaching</span>
+                <h2 class="cs-title">Bleaching</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero.
+                </p>
+                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Details</a>
+            </div>
+        </div>
+    </section>
+                                    
+
+    <!-- ============================================ -->
+    <!--                 Side By Side 3               -->
+    <!-- ============================================ -->
+    <a id="wurzelkanal"></a> <!-- ID used as internal link -->
+    <section id="RPsbs-70">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/services/wurzelkanalbehandlung.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/services/wurzelkanalbehandlung.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/services/wurzelkanalbehandlung.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Small Group Training</span>
+                <h2 class="cs-title">Wurzelkanalbehandlung</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero.
+                </p>
+                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+            </div>
+        </div>
+    </section>
+                                    
+    <!-- ============================================ -->
+    <!--             Side By Side Reverse 4           -->
+    <!-- ============================================ -->
+    <a id="parodontitis"></a> <!-- ID used as internal link -->
+    <section id="RPsbsr-70">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/services/parodontitis.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/services/parodontitis.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/services/parodontitis.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Small Group Training</span>
+                <h2 class="cs-title">Parodontitisbehandlung</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero.
+                </p>
+                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ============================================ -->
+    <!--                 Side By Side 5               -->
+    <!-- ============================================ -->
+    <a id="implantate"></a> <!-- ID used as internal link -->
+    <section id="RPsbs-70">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/services/implantate.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/services/implantate.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/services/implantate.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Small Group Training</span>
+                <h2 class="cs-title">Implantate</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero.
+                </p>
+                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+            </div>
+        </div>
+    </section>
+                                    
+    <!-- ============================================ -->
+    <!--             Side By Side Reverse 6           -->
+    <!-- ============================================ -->
+    <a id="prothesen"></a> <!-- ID used as internal link -->
+    <section id="RPsbsr-70">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/services/prothese.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/services/prothese.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/services/prothese.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Small Group Training</span>
+                <h2 class="cs-title">Zahnersatz</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero.
+                </p>
+                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
