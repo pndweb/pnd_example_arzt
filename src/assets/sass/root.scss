@@ -350,6 +350,7 @@
         z-index: 10000;
         transform: translateX(-50%);
         transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
+        opacity: 1;
 
         &:before {
             /* background color */
@@ -1476,6 +1477,46 @@
             }
         }
 
+        /************************************** Opening times *************************/
+        .open-table {
+            grid-column: 10/13;
+            grid-row: 1/ span 3;
+            width: 11em;
+        }
+
+        .open-table p {
+            display: inline-block;
+        }
+
+        .open-title {
+            text-align: left;
+            font-size: calc(20 / 16 * 1rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            margin: 0;
+            margin-bottom: calc(12 / 16 * 1rem);
+            color: var(--headerColor);
+            display: block;
+        }
+
+        .open-day {
+            text-align: left;
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .open-time {
+            float: right;
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+
         .cs-li {
             list-style: none;
             margin: 0;
@@ -1542,7 +1583,7 @@
             margin: clamp(3.75rem, 8vw, 6.25rem) 0 0 0;
             /* 24px - 40px */
             padding-bottom: clamp(1.25rem, 5vw, 2.5rem);
-            display: flex;
+            //display: flex;
             flex-direction: column;
             align-items: center;
             gap: calc(24 / 16 * 1rem);
@@ -1552,7 +1593,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            justify-content: right;
             align-items: center;
             flex-wrap: wrap;
             column-gap: calc(40 / 16 * 1rem);

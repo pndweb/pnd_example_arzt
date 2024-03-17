@@ -62,6 +62,13 @@
             align-items: flex-start;
         }
 
+        .cs-flex-group-times {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
         .cs-icon {
             width: calc(28 / 16 * 1rem);
             height: auto;
@@ -83,7 +90,8 @@
             line-height: 1.5em;
             text-decoration: none;
             color: #767676;
-            display: block;
+            //display: block;
+            //vertical-align: middle;
         }
 
         .cs-link {

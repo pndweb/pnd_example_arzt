@@ -279,6 +279,7 @@
     z-index: 10000;
     transform: translateX(-50%);
     transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
+    opacity: 1;
   }
   #cs-navigation:before {
     /* background color */
@@ -1182,6 +1183,7 @@
     background-color: var(--primary);
     position: relative;
     z-index: 1;
+    /************************************** Opening times *************************/
   }
   #cs-footer-710 .cs-container {
     width: 100%;
@@ -1235,6 +1237,38 @@
   }
   #cs-footer-710 .cs-contact-ul .cs-link:before {
     display: none;
+  }
+  #cs-footer-710 .open-table {
+    grid-column: 10/13;
+    grid-row: 1/span 3;
+    width: 11em;
+  }
+  #cs-footer-710 .open-table p {
+    display: inline-block;
+  }
+  #cs-footer-710 .open-title {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: 0.75rem;
+    color: var(--headerColor);
+    display: block;
+  }
+  #cs-footer-710 .open-day {
+    text-align: left;
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-decoration: none;
+    color: #fff;
+  }
+  #cs-footer-710 .open-time {
+    float: right;
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-decoration: none;
+    color: #fff;
   }
   #cs-footer-710 .cs-li {
     list-style: none;
@@ -1293,7 +1327,6 @@
     margin: clamp(3.75rem, 8vw, 6.25rem) 0 0 0;
     /* 24px - 40px */
     padding-bottom: clamp(1.25rem, 5vw, 2.5rem);
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
@@ -1302,7 +1335,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 2.5rem;

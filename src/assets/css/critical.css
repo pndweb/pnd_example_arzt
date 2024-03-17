@@ -74,7 +74,7 @@
     text-align: inherit;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    color: var(--secondary);
+    color: #fff;
     display: inline-block;
     position: relative;
   }
@@ -116,7 +116,7 @@
     font-weight: 700;
     text-align: center;
     margin: 0;
-    color: #1a1a1a;
+    color: #fff;
     min-width: 12.5rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
